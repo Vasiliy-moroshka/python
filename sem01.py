@@ -38,3 +38,32 @@
 # print(float(56)) # 56.0
 # print(str(455.56) * 2) # 455.56455.56 
 
+# n = int(input("Введите 1-ое число: "))
+# m = int(input("Введите 2-ое число: "))
+# print(type(n))
+# print(f'{n} + {m} = {n + m}')
+# print(f'{n} - {m} = {n - m}')
+# print(f'{n} * {m} = {n * m}')
+# print(f'{n} : {m} = {n // m}(ост. {n % m})')
+# print(f'{n} : {m} = {n / m}')
+# print(f'{n}^{m} = {n ** m}')
+
+# print(7 > 5)
+# print(10 < 0)
+# condition -> True or False
+
+# Алгебка логики (Булевская логика) True(1) False(0)
+
+# конъюнкция(логическое умножение) - and
+# дизъюнкция(логическое сложение) - or
+# отрицание(обратное значение) - not 
+
+# print(7 > 5 and 10 < 0)
+# #       1    *    0 = 0(False)
+# print(1 > 2 or 5 > -1)
+# #       0   +    1 = 1(True)
+# print(3 > 2 or 5 > 2)
+# #      1    +    1 = 1(True)
+# print((3 > 2 or 5 > 3) and 2 < 0)
+# #       1    +    1     *    0 = 0(False)
+
