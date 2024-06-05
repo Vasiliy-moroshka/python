@@ -83,11 +83,34 @@
 # ":" S007 "}]
 # Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
 
-data = [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"}, 
-        {"VI": "S005"}, {"VII": "S005"}, {" V ":"S009"}, {" VIII":"S007"}]
+# data = [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"}, 
+#         {"VI": "S005"}, {"VII": "S005"}, {" V ":"S009"}, {" VIII":"S007"}]
 
-result = set()
-for d in data:
-    for key in d:
-        result.add(d[key])
-print(result)
+# result = set()
+# for d in data:
+#     for key in d:
+#         result.add(d[key])
+# print(result)
+
+
+# Задача №23.
+
+# Дан массив, состоящий из целых чисел. Напишите
+# программу, которая подсчитает количество
+# элементов массива, больших предыдущего (элемента
+# с предыдущим номером)
+# Input: [0, -1, 5, 2, 3]
+# Output: 2 (-1 < 5, 2 < 3)
+
+data = [int(i) for i in input("Введите числа: ").split()]
+result = [data[i - 1] < data[i] for i in range(1, len(data))]
+print(sum(result)) # Складываем все элементы списка
+# range(len(data)) = 0 1 2 3 4 - создаём индексы списка
+# range(5) = 0 1 2 3 4
+
+# count = 0
+
+# for i in range(1, len(data)):
+#     if data[i] > data[i - 1]:
+#         count += 1
+# print(count)
