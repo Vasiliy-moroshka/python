@@ -78,3 +78,4 @@
 # for i in separator:
 # 	text = ''.join(text.split(i))
 # print(len(set(text.split())))
+# print(len(set(input("Input text: ").lower().split())))
