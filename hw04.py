@@ -59,3 +59,15 @@
 #         temp = sum
 
 # print(temp)
+
+
+# HW4(Черника)
+
+# data = [int(i) for i in input("Введите кол-во ягод: ").split()]
+# # [12, 4, 10, 2, 8, 5, 6]
+# #  -7 -6  -5 -4  -3 -2 -1
+# max_summa = 0
+# for i in range(len(data)): # 0 1 2 3 4 5 6
+#     if max_summa < data[i - 1] + data[i] + data[(i + 1) % len(data)]: # i = 6
+#         max_summa = data[i - 1] + data[i] + data[(i + 1) % len(data)] # 7 : 7 = 1(ост. 0)
+# print(max_summa)
