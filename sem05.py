@@ -54,7 +54,25 @@
 # Output: 1 3 3 3 1
 
 
-marks = [int(i) for i in input("Введите оценки: ").split()]
-print(*[min(marks) if i == max(marks) else i for i in marks])
-# min(marks) - поиск минимального числа списка
-# max(marks) - поиск максимального числа списка
+# marks = [int(i) for i in input("Введите оценки: ").split()]
+# print(*[min(marks) if i == max(marks) else i for i in marks])
+# # min(marks) - поиск минимального числа списка
+# # max(marks) - поиск максимального числа списка
+
+
+# Задача №35.
+
+# Напишите функцию, которая принимает одно число и
+# проверяет, является ли оно простым
+# Напоминание: Простое число - это число, которое
+# имеет 2 делителя: 1 и n(само число)
+# Input: 5
+# Output: yes
+
+def is_prime(n):
+    for i in range(2, n // 2 + 1):
+        if n % i == 0:
+            return "NO"
+        return "YES"
+    
+print(is_prime(int(input("Введите число: "))))
