@@ -91,19 +91,20 @@
 # Output: 4 3
 
 
-def reverse_numbers(n):
-    if n == 0:
-        return ""
-    num = int(input())
-    return reverse_numbers(n - 1) + f"{num} "
+# def reverse_numbers(n):
+#     if n == 0:
+#         return ""
+#     num = int(input())
+#     return reverse_numbers(n - 1) + f"{num} "
 
-n = int(input("Введите кол-во чисел: "))
-print(reverse_numbers(n))
+# n = int(input("Введите кол-во чисел: "))
+# print(reverse_numbers(n))
 
-# f(3) -> num = 1  f(2) + "1 " + "3 2 " + "1 " = "3 2 1 "
-#                    |
-#                  num = 2  f(1) + "2 " = "3 " + "2 " = "3 2 "
-#                             |
-#                           num = 3 f(0) + "3 " = "" + "3 " = "3 "
-#                                     |
-#                                     ""
+# # f(3) -> num = 1  f(2) + "1 " + "3 2 " + "1 " = "3 2 1 "
+# #                    |
+# #                  num = 2  f(1) + "2 " = "3 " + "2 " = "3 2 "
+# #                             |
+# #                           num = 3 f(0) + "3 " = "" + "3 " = "3 "
+# #                                     |
+# #                                     ""
+
