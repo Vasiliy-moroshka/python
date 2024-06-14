@@ -112,3 +112,23 @@
 #             score += int(v)
 
 # print(score)
+
+
+# Ещё одно решение, более лаконичное и чистое.
+
+# HW3(Задача Скрабл)
+# word = input("Введите слово: ")
+# data = {"A, E, I, O, U, L, N, S, T, R, А, В, Е, И, Н, О, Р, С, Т": 1,
+#         "D, G, Д, К, Л, М, П, У": 2,
+#         "B, C, M, P, Б, Г, Ё, Ь, Я": 3,
+#         "F, H, V, W, Y, Й, Ы": 4,
+#         "K, Й, Ы": 5,
+#         "J, X Ш, Э, Ю": 8,
+#         "Ф, Щ, Ъ Q, Z": 10
+#         }
+# count = 0
+# for i in word:  
+#     for key in data:
+#         if i.upper() in key:
+#             count += data[key]
+# print(count)
