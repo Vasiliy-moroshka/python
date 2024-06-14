@@ -69,10 +69,41 @@
 # Input: 5
 # Output: yes
 
-def is_prime(n):
-    for i in range(2, n // 2 + 1):
-        if n % i == 0:
-            return "NO"
-        return "YES"
+# def is_prime(n):
+#     for i in range(2, n // 2 + 1):
+#         if n % i == 0:
+#             return "NO"
+#         return "YES"
     
-print(is_prime(int(input("Введите число: "))))
+# print(is_prime(int(input("Введите число: "))))
+
+
+# Задача №37.
+
+# Дано натуральное число N и
+# последовательность из N элементов.
+# Требуется вывести эту последовательность в
+# обратном порядке.
+# Примечание. В программе запрещается
+# объявлять массивы и использовать циклы
+# (даже для ввода и вывода).
+# Input: 2 -> 3 4
+# Output: 4 3
+
+
+def reverse_numbers(n):
+    if n == 0:
+        return ""
+    num = int(input())
+    return reverse_numbers(n - 1) + f"{num} "
+
+n = int(input("Введите кол-во чисел: "))
+print(reverse_numbers(n))
+
+# f(3) -> num = 1  f(2) + "1 " + "3 2 " + "1 " = "3 2 1 "
+#                    |
+#                  num = 2  f(1) + "2 " = "3 " + "2 " = "3 2 "
+#                             |
+#                           num = 3 f(0) + "3 " = "" + "3 " = "3 "
+#                                     |
+#                                     ""
