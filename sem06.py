@@ -74,3 +74,38 @@
 # list_1 = list_creation(n)
 # print(list_1)
 # print(count_elements(list_1))
+
+
+
+# Задача №43.
+
+# Дан список чисел. Посчитайте, сколько в нем пар
+# элементов, равных друг другу. Считается, что любые
+# два элемента, равные друг другу образуют одну пару,
+# которую необходимо посчитать. Вводится список
+# чисел. Все числа списка находятся на разных
+# строках.
+# Ввод:          Вывод:
+# 1 2 3 2 3        2
+
+# import random
+
+# def list_creation(a):
+#     list = []
+#     for i in range(0, a):
+#         list.append(random.randint(1, 10))
+#     # print(list_1)
+#     return list
+
+# def count_pairs(list):
+#     count = 0
+#     for i in range(len(list)):
+#         for j in range(i + 1, len(list)):
+#             if list[i] == list[j]:
+#                 count += 1
+#     return count
+
+# n = int(input("Введите кол-во элементов списка N :"))
+# list_1 = list_creation(n)
+# print(list_1)
+# print(count_pairs(list_1))
