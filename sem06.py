@@ -15,11 +15,11 @@
 import random
 
 def list_creation(a):
-    list_1 = []
+    list = []
     for i in range(0, a):
-        list_1.append(random.randint(1, 10))
+        list.append(random.randint(1, 10))
     # print(list_1)
-    return list_1
+    return list
 
 def comparision(list_1, list_2):
     list = []
